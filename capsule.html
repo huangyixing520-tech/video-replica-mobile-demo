@@ -81,7 +81,11 @@ body { margin:0; background:#f5f6f8; overflow-x:hidden; }
 
 #replication-linked-tags .rt-reference { margin:8px 0 18px; }
 #replication-linked-tags .rt-reference img { width:120px; height:160px; }
-#replication-linked-tags .rt-editor { min-height:110px; }
+#replication-linked-tags .rt-content { display:flex; flex-direction:column; }
+#replication-linked-tags .demo-notice, #replication-linked-tags .rt-title, #replication-linked-tags .rt-reference { flex:none; }
+#replication-linked-tags .rt-composer { display:flex; flex-direction:column; flex:1; min-height:220px; }
+#replication-linked-tags .rt-assets, #replication-linked-tags .rt-tools { flex:none; }
+#replication-linked-tags .rt-editor { flex:1; min-height:60px; overflow-y:auto; }
 #replication-linked-tags .rt-tools { gap:6px; }
 #replication-linked-tags .rt-pill { flex:none; padding:7px 10px; font-size:12px; }
 #replication-linked-tags .rt-replace { display:flex; align-items:center; gap:4px; border:0; min-height:36px; font-family:inherit; }
